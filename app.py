@@ -103,13 +103,11 @@ with tab2:
 with tab3:
     st.header("🤖 AI Freelancer Assistant")
     st.write("Tanyakan apa saja seputar freelance, desain, branding, UI/UX, dan bisnis kreatif.")
-
     if st.button("🗑️ Bersihkan Riwayat Chat"):
-       st.session_state.messages = [
-           {"role": "assistant", "content": "Halo 👋\n\nSaya AI Freelancer Assistant. Ada yang bisa saya bantu hari ini?"}
-    ]
-    st.rerun()
-
+        st.session_state.messages = [
+            {"role": "assistant", "content": "Halo 👋\n\nSaya AI Freelancer Assistant. Ada yang bisa saya bantu hari ini?"}
+        ]
+        st.rerun()
     if "messages" not in st.session_state:
         st.session_state.messages = [
             {"role": "assistant", "content": "Halo 👋\n\nSaya AI Freelancer Assistant. Ada yang bisa saya bantu hari ini?"}
