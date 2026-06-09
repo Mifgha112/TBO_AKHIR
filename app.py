@@ -25,7 +25,7 @@ else:
 try:
     genai.configure(api_key=GEMINI_API_KEY)
     # Menggunakan gemini-1.5-flash sebagai standar produksi yang stabil
-    model = genai.GenerativeModel("gemini-1.5-flash")
+    model = genai.GenerativeModel("gemini-3.5-flash")
 except Exception as e:
     st.error(f"Gagal menghubungkan ke Google AI: {str(e)}")
     st.stop()
